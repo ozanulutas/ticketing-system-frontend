@@ -1,0 +1,3 @@
+@mixin border($direction) {
+    border#{-$direction}: 1.5px solid $gray-light;
+}

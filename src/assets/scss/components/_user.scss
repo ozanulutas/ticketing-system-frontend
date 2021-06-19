@@ -1,0 +1,16 @@
+.user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &__avatar {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__name {
+        color: $gray;
+    }
+}

@@ -1,30 +1,30 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <Nav :toggleNav="toggleNav"/>
+
+  <div :class="toggleNav ? '' : 'page-content--expanded'" class="page-content">
+    <Topbar @toggle-nav="toggleNav = !toggleNav"/>
+    <router-view></router-view>
   </div>
-  <router-view/>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Nav from "./components/Nav.vue";
+import Topbar from "./components/Topbar.vue";
 
-#nav {
-  padding: 30px;
+export default {
+  components: {
+    Nav,
+    Topbar
+  },
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  data() {
+    return {
+      toggleNav: true,
     }
   }
 }
+</script>
+
+<style lang="scss">
+@import "@/assets/scss/_layout.scss";
 </style>
