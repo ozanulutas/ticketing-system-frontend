@@ -1,0 +1,38 @@
+<template>
+
+  <aside :class="toggleSidebar ? '' : 'sidebar--hidden'" class="sidebar">
+
+    <div class="sidebar__header">
+      <h1>Ticket</h1>
+    </div>
+
+    <div class="sidebar__body">
+      <Nav/>
+
+      <Agents/>
+    </div>
+
+  </aside>
+
+</template>
+
+<script>
+import Nav from "./Nav.vue";
+import Agents from "./Agents.vue";
+
+export default {
+  components: {
+    Nav,
+    Agents,
+  },
+
+  props: {
+    toggleSidebar: Boolean
+  },
+
+}
+</script>
+
+<style lang="scss" scoped>
+@import "@/assets/scss/components/_sidebar.scss";
+</style>

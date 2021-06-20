@@ -1,25 +1,26 @@
 <template>
-  <Nav :toggleNav="toggleNav"/>
+  <Sidebar :toggleSidebar="toggleSidebar"/>
 
-  <div :class="toggleNav ? '' : 'page-content--expanded'" class="page-content">
-    <Topbar @toggle-nav="toggleNav = !toggleNav"/>
+  <main :class="toggleSidebar ? '' : 'page-content--expanded'" class="page-content">
+    <Topbar @toggle-sidebar="toggleSidebar = !toggleSidebar"/>
+    
     <router-view></router-view>
-  </div>
+  </main>
 </template>
 
 <script>
-import Nav from "./components/Nav.vue";
+import Sidebar from "./components/Sidebar.vue";
 import Topbar from "./components/Topbar.vue";
 
 export default {
   components: {
-    Nav,
+    Sidebar,
     Topbar
   },
 
   data() {
     return {
-      toggleNav: true,
+      toggleSidebar: true,
     }
   }
 }

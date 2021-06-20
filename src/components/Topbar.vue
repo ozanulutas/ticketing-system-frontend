@@ -2,7 +2,7 @@
   <section class="topbar">
     <!-- Sol -->
     <div class="topbar__section topbar__section--left">
-      <button @click="$emit('toggle-nav')" class="toggle-nav">
+      <button @click="$emit('toggle-sidebar')" class="toggle-sidebar">
         <i class="fas fa-hamburger"></i>
       </button>
     </div>
@@ -15,7 +15,7 @@
         </button>
       </div>
       <router-link to="profile" class="topbar__item">
-        <img class="user__avatar" src="@/assets/img/avatar.jpg">
+        <img class="agent__avatar" src="@/assets/img/avatar.jpg">
       </router-link>
     </div>
   </section>
@@ -27,8 +27,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/scss/components/_topbar.scss";
-@import "@/assets/scss/components/_user.scss";
+@import "@/assets/scss/components/_agent.scss";
 @import "@/assets/scss/components/_buttons.scss";
 </style>

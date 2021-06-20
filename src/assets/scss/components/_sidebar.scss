@@ -1,0 +1,40 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: $sidebar-width;
+    height: 100%;
+    box-shadow: $box-shadow;
+    background-color: white;
+    transition: $transition;
+  
+    &__header,
+    &__body {
+      padding: 1rem;
+    }
+  
+    &__header {
+      height: $topbar-height;
+      background-color: $blue;
+      color: white;
+    }
+  
+    &__body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1rem;
+      height: 100%;
+      height: calc(100% - #{$topbar-height});
+      overflow-y: scroll;
+    }
+  
+  
+    &--hidden {
+      transform: translateX(-100%);
+    }
+}
+  
+  
+  
+  
