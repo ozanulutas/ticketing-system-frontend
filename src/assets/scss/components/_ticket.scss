@@ -1,0 +1,35 @@
+.ticket {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid $gray-light;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+
+    &__urgency {
+        width: 5.5rem;
+        color: white;
+        padding: 0.7rem 1rem;
+        text-align: center;
+        border-radius: 3px;
+
+        &--urgent {
+            background-color: $red;
+        }
+        &--normal {
+            background-color: $blue-light;
+        }
+        &--later {
+            background-color: $yellow;
+        }
+    }
+
+    &__topic {
+        flex: 1;
+    }
+
+    &__operation {
+        color: $gray-dark;
+    }
+}

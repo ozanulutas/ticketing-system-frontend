@@ -9,6 +9,9 @@
   }  
 
   &__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     color: $gray;
 
     &.router-link-active,
@@ -25,13 +28,14 @@
   }
 
   &__icon {
-    width: 3.43rem;
-    height: 3.43rem;
-    display: inline-grid;
-    place-items: center;
-    margin-right: 1rem;
-    border: $gray-light 1.5px solid;
-    border-radius: 4px;
+    @include icon-with-border;
+    // width: 3.43rem;
+    // height: 3.43rem;
+    // display: inline-grid;
+    // place-items: center;
+    // padding: 0.9rem;
+    // border: $gray-light 1.5px solid;
+    // border-radius: 4px;
   }
 }
 

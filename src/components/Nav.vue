@@ -1,7 +1,7 @@
 <template>
   <nav  class="nav">
     <router-link v-for="link in links" :key="link.name" :to="link.to" class="nav__item">
-      <i :class="link.icon" class="nav__icon"></i>
+      <font-awesome-icon :icon="link.icon" class="nav__icon" />
       {{ link.name }}
     </router-link>
   </nav>
@@ -12,9 +12,9 @@ export default {
   data() {
     return {
       links: [
-        { name: "Dashboard", to: "/", icon: "fas fa-home" },
-        { name: "Tickets", to: "tickets", icon: "fas fa-ticket-alt" },
-        { name: "Profile", to: "profile", icon: "fas fa-user" },
+        { name: "Dashboard", to: "/", icon: "home" },
+        { name: "Tickets", to: "tickets", icon: "ticket-alt" },
+        { name: "Profile", to: "profile", icon: "user" },
       ],
     }
   },

@@ -1,12 +1,19 @@
 // Renkler
 $blue: #19b5fe;
+$blue-light: lighten(#19b5fe, 10%);
+$red: #ec5d43;
+$yellow: #f5d385;
+$green: #aae0a1;
 $gray: #bfc5c9;
+$gray-dark: darken(#bfc5c9, 15%);
 $gray-light: lighten($gray, 14%);
+$gray-lighter: lighten($gray, 20%);
 
 
 // Ölçüler
 $sidebar-width: 20rem;
 $topbar-height: 6.2rem;
+
 
 // Shadow
 $box-shadow: rgba(71, 67, 67, 0.25) 0.1rem 0.1rem 0.8rem;

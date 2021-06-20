@@ -2,13 +2,12 @@
 
   <aside :class="toggleSidebar ? '' : 'sidebar--hidden'" class="sidebar">
 
-    <div class="sidebar__header">
+    <header class="sidebar__header">
       <h1>Ticket</h1>
-    </div>
+    </header>
 
     <div class="sidebar__body">
       <Nav/>
-
       <Agents/>
     </div>
 

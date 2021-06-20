@@ -13,4 +13,18 @@
     &__name {
         color: $gray;
     }
+
+    &__status {
+        position: relative;
+
+        &--green::after {
+            @include status-icon($green, bottom, "lg");
+        }
+        &--yellow::after {
+            @include status-icon($yellow, bottom, "lg");
+        }
+        &--red::after {
+            @include status-icon($red, bottom, "lg");
+        }
+    }
 }

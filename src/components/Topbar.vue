@@ -3,7 +3,7 @@
     <!-- Sol -->
     <div class="topbar__section topbar__section--left">
       <button @click="$emit('toggle-sidebar')" class="toggle-sidebar">
-        <i class="fas fa-hamburger"></i>
+          <font-awesome-icon icon="hamburger"/>
       </button>
     </div>
 
@@ -11,9 +11,10 @@
     <div class="topbar__section topbar__section--right">
       <div class="topbar__item">
         <button class="btn-notification btn-notification--active">
-          <i class="far fa-bell"></i>
+          <font-awesome-icon :icon="['far', 'bell']"/>
         </button>
       </div>
+
       <router-link to="profile" class="topbar__item">
         <img class="agent__avatar" src="@/assets/img/avatar.jpg">
       </router-link>

@@ -1,11 +1,13 @@
 <template>
   <Sidebar :toggleSidebar="toggleSidebar"/>
 
-  <main :class="toggleSidebar ? '' : 'page-content--expanded'" class="page-content">
+  <div :class="{'page-wrapper--expanded' : !toggleSidebar}" class="page-wrapper">
     <Topbar @toggle-sidebar="toggleSidebar = !toggleSidebar"/>
     
-    <router-view></router-view>
-  </main>
+    <main class="main">
+      <router-view></router-view>
+    </main>
+  </div>
 </template>
 
 <script>

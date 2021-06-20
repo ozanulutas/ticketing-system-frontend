@@ -1,0 +1,19 @@
+.status {
+    position: relative;
+
+    &--blue::after {
+        @include status-icon($blue, top, "sm");
+    }
+
+    &--red::after {
+        @include status-icon($red, top, "sm");
+    }
+
+    &--green::after {
+        @include status-icon($green, top, "sm");
+    }
+
+    &--yellow::after {
+        @include status-icon($yellow, top, "sm");
+    }
+}

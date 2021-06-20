@@ -1,9 +1,51 @@
-.page-content {
+.page-wrapper {
     margin-left: $sidebar-width;
     transition: $transition;
 
     &--expanded {
         margin-left: 0;
+    }
+}
+
+
+.main {
+    padding: 1.5rem;
+    background-color: $gray-lighter;
+    min-height: calc(100vh - #{$topbar-height});
+}
+
+
+.section {
+    background-color: white;
+    padding:  0 1rem 1rem 1rem;
+    border: $gray-light 1px solid;
+    border-radius: 5px;
+    
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        height: $topbar-height;
+        margin-bottom: 1rem;
+        @include border(bottom);
+    }
+
+    &__icon {
+        @include icon-with-border;
+        color: $blue;
+    }
+
+    &__title {
+        display: inline-flex;
+        margin-right: 0.5rem;
+        margin-top: 0;
+        margin-bottom: 0.3rem;
+    }
+
+    &__notification {
+    }
+
+    &__desc {
     }
 }
 

@@ -1,7 +1,7 @@
 .topbar {
     display: flex;
     height: $topbar-height;
-    // padding: 1rem;
+    background-color: white;
     @include border(bottom);
 
     &__section {
