@@ -29,13 +29,7 @@
 
   &__icon {
     @include icon-with-border;
-    // width: 3.43rem;
-    // height: 3.43rem;
-    // display: inline-grid;
-    // place-items: center;
-    // padding: 0.9rem;
-    // border: $gray-light 1.5px solid;
-    // border-radius: 4px;
+    padding: 0.9rem;
   }
 }
 

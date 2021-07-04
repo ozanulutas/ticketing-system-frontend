@@ -1,13 +1,13 @@
 <template>
-  tickets
+  <Tickets/>
 </template>
 
 <script>
-export default {
+import Tickets from "@/components/Tickets";
 
+export default {
+  components: {
+    Tickets
+  }
 }
 </script>
-
-<style>
-
-</style>

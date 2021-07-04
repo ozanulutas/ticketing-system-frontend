@@ -31,5 +31,13 @@
 
     &__operation {
         color: $gray-dark;
+        transition: $transition;
+
+        &--reply:hover {
+            color: $blue;
+        }
+        &--delete:hover {
+            color: $red;
+        }
     }
 }
