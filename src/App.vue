@@ -1,8 +1,8 @@
 <template>
-  <Sidebar :toggleSidebar="toggleSidebar"/>
+  <Sidebar :isSidebarOpen="isSidebarOpen"/>
 
-  <div :class="{'page-wrapper--expanded' : !toggleSidebar}" class="page-wrapper">
-    <Topbar @toggle-sidebar="toggleSidebar = !toggleSidebar"/>
+  <div :class="{'page-wrapper--expanded' : !isSidebarOpen}" class="page-wrapper">
+    <Topbar @toggle-sidebar="isSidebarOpen = !isSidebarOpen"/>
     
     <main class="main">
       <router-view></router-view>
@@ -22,7 +22,7 @@ export default {
 
   data() {
     return {
-      toggleSidebar: true,
+      isSidebarOpen: window.matchMedia("(min-width: 850px)").matches,
     }
   }
 }

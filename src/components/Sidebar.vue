@@ -1,6 +1,7 @@
 <template>
 
-  <aside :class="toggleSidebar ? '' : 'sidebar--hidden'" class="sidebar">
+  <aside :class="{'sidebar--hidden' : !isSidebarOpen}" class="sidebar">
+  <!-- <aside :class="isSidebarOpen ? '' : 'sidebar--hidden'" class="sidebar"> -->
 
     <header class="sidebar__header">
       <h1>Ticket</h1>
@@ -26,7 +27,7 @@ export default {
   },
 
   props: {
-    toggleSidebar: Boolean
+    isSidebarOpen: Boolean
   },
 
 }
