@@ -5,9 +5,9 @@ import store from "./store";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from "@fortawesome/vue-fontawesome";
-import { faHome, faUser, faTicketAlt, faHamburger, faFeatherAlt, faTrashAlt, faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faTicketAlt, faHamburger, faFeatherAlt, faTrashAlt, faEye, faEyeSlash, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-regular-svg-icons";
-library.add(faHome, faUser, faTicketAlt, faBell, faHamburger, faFeatherAlt, faTrashAlt, faEye, faEyeSlash);
+library.add(faHome, faUser, faTicketAlt, faBell, faHamburger, faFeatherAlt, faTrashAlt, faEye, faEyeSlash, faPaperPlane);
 
 
 const app = createApp(App);

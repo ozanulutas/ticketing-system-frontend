@@ -5,7 +5,7 @@
         <font-awesome-icon icon="ticket-alt"/>
       </router-link>
     </template>
-    <template #title> Daily Tickets </template>
+    <template #title>Daily Tickets</template>
     <template #notification>(5 Unread Notifications)</template>
     <template #description>List of updates about the tickets and tasks every day</template>
     <template #body>

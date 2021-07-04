@@ -1,6 +1,6 @@
 .topbar {
     display: flex;
-    height: $topbar-height;
+    height: $header-height;
     background-color: white;
     @include border(bottom);
 

@@ -6,6 +6,7 @@
     
     <main class="main">
       <router-view></router-view>
+      <Chat/>
     </main>
   </div>
 </template>
@@ -13,11 +14,13 @@
 <script>
 import Sidebar from "./components/Sidebar.vue";
 import Topbar from "./components/Topbar.vue";
+import Chat from "./components/Chat.vue";
 
 export default {
   components: {
     Sidebar,
-    Topbar
+    Topbar,
+    Chat
   },
 
   data() {
